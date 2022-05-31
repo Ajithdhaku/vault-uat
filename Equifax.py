@@ -170,7 +170,7 @@ public interface PFAPreprocessingOptions extends PipelineOptions {
   
     String getFilterFieldValue();
 //   string Username = "16200";
-string passwd = "dEbdv7Q82sz54zc2t7";
+//   string passwd = "dEbdv7Q82sz54zc2t7";
 //            string service_name = "acroxml";
 //            string eqresponse;
 //            string CustomerCode = "ISTS";

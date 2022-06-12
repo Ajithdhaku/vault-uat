@@ -219,6 +219,67 @@ public interface PFAPreprocessingOptions extends PipelineOptions {
     String getEndDate();
 
     void setEndDate(String value);
+/>
+    
+	<groupId>cl.equifax</groupId>
+	<artifactId>party-setup</artifactId>
+	
+    <version>0.0.1</version>
+	<name>party-setup</name>
+    
+	<description>Raid setup group organization tool</description>
+    
+	<properties>
+		<java.version>11</java.version>
+	</properties>
+    
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+    
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
 
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
+    
+		<dependency>
+			<groupId>org.projectequifax</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+    
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<excludes>
+						<exclude>
+							<groupId>org.projectequifax</groupId>
+							<artifactId>lombok</artifactId>
+						</exclude>
+					</excludes>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
+
+    
 }
-
